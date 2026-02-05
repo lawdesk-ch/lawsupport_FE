@@ -62,4 +62,4 @@ export default async function RootLayout({
   );
 }
 
-export const metadata = {};
+// export const metadata = {};
