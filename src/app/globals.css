@@ -1,5 +1,18 @@
 @import 'tailwindcss';
 
+/* Classes for custom fonts */
+.font-guton {
+  font-family: var(--font-guton), Arial, Helvetica, system-ui, sans-serif;
+}
+
+.font-manrope {
+  font-family: var(--font-manrope), sans-serif;
+}
+
+.font-geologica {
+  font-family: var(--font-montserrat), sans-serif;
+}
+
 html,
 body {
   height: 100%;
@@ -18,6 +31,14 @@ body {
   flex-direction: column;
 }
 
+.color-red {
+  color: #f00;
+}
+
+.color-silver {
+  color: #6a6a6a;
+}
+
 button {
   transition: all 0.4s;
 }
@@ -30,6 +51,21 @@ main {
   flex: 1;
   display: flex;
   flex-direction: column;
+}
+
+/* nprogress styles */
+#nprogress {
+  pointer-events: none;
+}
+
+#nprogress .bar {
+  background: #f00;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
 }
 
 .container-mobile {
@@ -51,5 +87,32 @@ main {
   .container-mobile {
     padding-left: 20px;
     padding-right: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .scrollbar-custom::-webkit-scrollbar {
+    height: 18px;
+  }
+
+  .scrollbar-custom::-webkit-scrollbar-track {
+    background: #6a6a6a;
+  }
+
+  .scrollbar-custom::-webkit-scrollbar-thumb {
+    background-color: #b1b1b1;
+  }
+
+  .scrollbar-custom::-webkit-scrollbar-button {
+    display: none;
+  }
+
+  .scrollbar-custom::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+
+  .scrollbar-custom::-webkit-scrollbar-thumb:hover {
+    background-color: #fafafa;
+    background-color: #fafafa;
   }
 }
