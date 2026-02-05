@@ -1,5 +1,5 @@
 export const SITE_URL = 'https://swissfirma.com';
-export const SITE_URL_IMAGES = 'https://swissfirma.com/images/lawsupport.jpg`';
+export const SITE_URL_IMAGES = 'https://swissfirma.com/images/lawsupport.jpg';
 
 // export const INTEREST_OPTIONS = [
 //   'Formation (GmbH/AG)',
