@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export const expertiseAndServices = [
   {
-    img: '/images/expertiseAndServices/write.jpg',
+    img: 'write',
     title: 'Expertise in Swiss Corporate Law',
     description: (
       <>
@@ -14,7 +14,7 @@ export const expertiseAndServices = [
     ),
   },
   {
-    img: '/images/expertiseAndServices/show.jpg',
+    img: 'show',
     title: 'Tailored Solutions',
     description: (
       <>
@@ -26,7 +26,7 @@ export const expertiseAndServices = [
     ),
   },
   {
-    img: '/images/expertiseAndServices/flag.jpg',
+    img: 'flag',
     title: 'Efficient Company Formation',
     description: (
       <>
@@ -36,7 +36,7 @@ export const expertiseAndServices = [
     ),
   },
   {
-    img: '/images/expertiseAndServices/citi.jpg',
+    img: 'citi',
     title: 'Shelf Companies',
     description: (
       <>
@@ -47,7 +47,7 @@ export const expertiseAndServices = [
     ),
   },
   {
-    img: '/images/expertiseAndServices/notebook.jpg',
+    img: 'notebook',
     title: 'Resident Card Assistance',
     description: (
       <>
@@ -59,7 +59,7 @@ export const expertiseAndServices = [
     ),
   },
   {
-    img: '/images/expertiseAndServices/build.jpg',
+    img: 'build',
     title: 'Swiss Bank Account Setup',
     description: (
       <>
@@ -70,7 +70,7 @@ export const expertiseAndServices = [
     ),
   },
   {
-    img: '/images/expertiseAndServices/bark.jpg',
+    img: 'bark',
     title: 'Comprehensive Accounting Services',
     description: (
       <>
@@ -81,7 +81,7 @@ export const expertiseAndServices = [
     ),
   },
   {
-    img: '/images/expertiseAndServices/speack.jpg',
+    img: 'speack',
     title: 'Effortless Company Liquidation',
     description: (
       <>
@@ -104,12 +104,12 @@ const ExpertiseAndServices = () => {
           }`}
         >
           <Image
-            src={item.img}
+            src={`/images/expertiseAndServices/${item.img}.jpg`}
             className="w-[350px] h-[350px] object-cover"
             loading="lazy"
             width={350}
             height={350}
-            alt="Expertise And Services"
+            alt={item.img}
           />
           <div className="w-[350px] h-[350px] bg-[#fafafa] p-6">
             <h3 className="text-xl font-medium text-black leading-none mb-5">
