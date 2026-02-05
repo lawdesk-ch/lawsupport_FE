@@ -20,7 +20,7 @@ const nextConfig: NextConfig = {
       { protocol: 'https', hostname: 'res.cloudinary.com', pathname: '/**' },
       {
         protocol: 'https',
-        hostname: '',
+        hostname: 'swissfirma-be.onrender.com',
         pathname: '/**',
       },
     ],
