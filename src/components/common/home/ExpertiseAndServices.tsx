@@ -20,7 +20,7 @@ export const expertiseAndServices = [
       <>
         <span className="text-[#f00]">Lawsupport</span> provides custom-tailored
         company formation solutions to meet your specific business needs,
-        whether you’re starting a business in Switzerland or expanding an
+        whether you&apos;re starting a business in Switzerland or expanding an
         existing one.
       </>
     ),

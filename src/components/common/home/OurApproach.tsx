@@ -13,7 +13,7 @@ const OurApproach = () => {
       <div className="flex mb-[50px]">
         <h2 className="text-5xl w-1/2">Our approach</h2>
         <p className="color-silver max-w-[590px] text-lg w-1/2">
-          At Lawsupport, we understand that every business is unique. The
+          At Lawsupport, we understand that every business is unique. The
           approach involves working closely with you to gain a deep
           understanding of your goals and challenges. This personalized approach
           allows us to provide the right solutions. Our process involves:

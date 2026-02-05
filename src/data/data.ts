@@ -141,6 +141,6 @@ export const ourApproach = [
   {
     icon: 'support',
     title: 'Ongoing Support',
-    desc: `Lawsupport remains by your side even after successful setup, offering ongoing support and advice as needed.`,
+    desc: `Lawsupport remains by your side even after successful setup, offering ongoing support and advice as needed.`,
   },
 ];
