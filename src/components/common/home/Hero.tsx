@@ -5,13 +5,19 @@ import { services } from '@/data/data';
 function Hero() {
   return (
     <div className="relative w-full">
-      <div className="flex flex-col md:flex-row bg-[#f00] w-full h-[560px] md:h-[387px] lg:h-[531px] max-w-[768px] md:max-w-[1024px] lg:max-w-[1440px]">
-        <div className="mt-[222px] order-2 md:order-1 h-1/3 text-white md:h-auto md:min-w-[479px] lg:min-w-[612px] p-4 md:p-6">
-          <h1 className="text-[32px] md:text-[42px] lg:text-5xl leading-none mb-3">
+      <div
+        className="flex flex-col md:flex-row bg-[#f00] w-full h-[350px] md:h-[387px] lg:h-[531px] max-w-[768px] 
+          md:max-w-[1024px] lg:max-w-[1440px]"
+      >
+        <div
+          className="text-white md:mt-[197px] lg:mt-[222px] h-[121px] md:h-auto md:min-w-[479px] lg:min-w-[612px] 
+            order-2 md:order-1 p-3 md:p-6"
+        >
+          <h1 className="text-[30px] md:text-[42px] lg:text-5xl leading-none mb-3">
             Business In Switzerland
           </h1>
 
-          <p className="md:text-[26px] lg:text-[32px] leading-none max-w-[410px]">
+          <p className="text-xl md:text-[26px] lg:text-[32px] leading-tight md:leading-none max-w-[323px] lg:max-w-[410px]">
             And company registration in Switzerland
           </p>
         </div>
@@ -32,12 +38,13 @@ function Hero() {
         </div>
       </div>
 
-      <ul className="absolute flex flex-wrap w-full z-10 bottom-0">
+      <ul className="lg:absolute lg:bottom-0 grid grid-cols-2 lg:grid-cols-4 z-10">
         {services.map((service, i) => (
           <li key={i} className="">
             <Link
               href={`/${service.slug}`}
-              className={`flex items-center w-[350px] h-[72px] px-6 text-xl bg-${service.bg} text-${service.color} hover:text-[#6a6a6a] transition-colors`}
+              className={`flex items-center h-[72px] px-3 md:px-6 text-lg leading-tight md:text-xl 
+              ${service.bg} ${service.bgLg} ${service.color} ${service.colorLg} hover:text-[#6a6a6a] transition-colors`}
             >
               {service.label}
             </Link>

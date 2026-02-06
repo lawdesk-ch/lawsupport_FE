@@ -110,29 +110,34 @@ const ContactUs = () => {
 
   return (
     <div>
-      <h2 className="text-5xl w-1/2 mb-[50px]">Contact us</h2>
+      <h2 className="w-1/2 text-[32px] md:text-[42px] lg:text-5xl mb-[20px] md:mb-[26px] lg:mb-[50px]">
+        Contact us
+      </h2>
 
-      <div className="flex justify-between w-full">
-        <div className="flex gap-5">
+      <div className="flex flex-col lg:flex-row justify-between w-full">
+        <div className="flex gap-2 md:gap-5 mb-7 lg:mb-0">
           <Image
             src="/images/author.jpg"
             alt="image-man"
             loading="lazy"
             width={336}
             height={343}
-            className="w-[336px] h-[343px] object-cover"
+            className="w-[173px] h-[177px] md:w-[229px] md:h-[234px] lg:w-[336px] lg:h-[343px] object-cover"
+            sizes="(max-width: 768px) 173px, (max-width: 1024px) 229px, 336px"
           />
 
           <div className="flex flex-col justify-between">
-            <div className="space-y-3 max-w-[327px]">
-              <h3 className="text-[32px] leading-none mb-2">Maria Werner</h3>
+            <div className="space-y-3 lg:max-w-[327px]">
+              <h3 className="text-2xl md:text-[26px] lg:text-[32px] leading-none mb-1 md:3 lg:mb-2">
+                Maria Werner
+              </h3>
 
               <p className="text-lg color-silver leading-none">
                 Of Counsel — specializing in corporate law and tax law
               </p>
             </div>
 
-            <div className="space-y-5">
+            <div className="space-y-4 md:space-y-5">
               <div className="flex gap-3 items-center">
                 <Image
                   src="/icons/tel.svg"

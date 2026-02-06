@@ -1,29 +1,23 @@
 const SwissBusinessOverview = () => {
   return (
-    <div>
-      <h2 className="text-5xl leading-none text-center mb-[50px]">
+    <>
+      <h2
+        className="text-[32px] md:text-[42px] lg:text-5xl leading-none lg:text-center 
+          w-[403px] md:w-[500px] lg:w-auto mb-[30px] md:mb-[26px] lg:mb-[50px]"
+      >
         Business legal support, corporate law firm
       </h2>
 
-      <div className="flex w-full h-[520px]">
-        <div className="flex flex-col justify-between leading-none w-1/2">
-          <p className="text-[32px] max-w-[600px]">
+      <div className="flex flex-col gap-15 md:gap-20 lg:gap-30 w-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10 lg:gap-6">
+          <p className="text-2xl md:text-[26px] lg:text-[32px] leading-none lg:max-w-[600px]">
             Swiss business made easy
             <br /> with <span className="text-[#f00]">Lawsupport</span>: Company
             formation in Switzerland, starting a business in Switzerland, open a
             Swiss bank account, and more. Your gateway to success in
             <br /> Switzerland.
           </p>
-          <p className="text-5xl max-w-[606px]">
-            Why
-            <br /> Choose <span className="text-[#f00]">Lawsupport</span> for
-            <br />
-            Your Swiss Business Needs
-          </p>
-        </div>
-
-        <div className="flex flex-col justify-between w-1/2 leading-none color-silver text-lg ">
-          <p className="max-w-[572px]">
+          <p className="max-w-[572px] color-silver lg:text-lg leading-none">
             In today&apos;s dynamic global business landscape, establishing and
             expanding your business in Switzerland is a strategic move towards
             success. At <span className="text-[#f00]">Lawsupport</span>, we
@@ -31,7 +25,16 @@ const SwissBusinessOverview = () => {
             international, and offer a comprehensive range of corporate services
             tailored to your requirements.
           </p>
-          <p className="max-w-[600px]">
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 md:gap-6 items-end">
+          <p className="text-[32px] md:text-[42px] text-5xl md:max-w-[700px] lg:max-w-[606px]">
+            Why
+            <br className="md:hidden lg:block" /> Choose{' '}
+            <span className="text-[#f00]">Lawsupport</span> for
+            <br className="md:hidden lg:block" /> Your Swiss Business Needs
+          </p>
+          <p className="lg:max-w-[600px] lg:text-lg color-silver leading-none">
             When it comes to navigating the intricacies of Swiss business
             regulations and corporate landscape, having a reliable Swiss lawyer
             and legal services provider like{' '}
@@ -41,7 +44,7 @@ const SwissBusinessOverview = () => {
           </p>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

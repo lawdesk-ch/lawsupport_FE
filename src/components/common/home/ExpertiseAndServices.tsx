@@ -99,11 +99,11 @@ const ExpertiseAndServices = () => {
       {expertiseAndServices.map((item, index) => (
         <li
           key={item.title}
-          className={`flex flex-col md:flex-row w-full 
+          className={`flex flex-col md:flex-row w-full
             ${index % 2 === 1 ? 'md:flex-row-reverse lg:flex-row' : ''}
             ${index % 4 >= 2 ? 'lg:flex-row-reverse' : ''}`}
         >
-          <div className="relative w-full md:w-1/2 h-[365px] lg:h-[350px]">
+          <div className="relative w-full md:w-1/2 h-[355px] md:h-[365px] lg:h-[350px]">
             <Image
               src={`/images/expertiseAndServices/${item.img}.jpg`}
               className="object-cover"
@@ -113,7 +113,7 @@ const ExpertiseAndServices = () => {
               alt={item.img}
             />
           </div>
-          <div className="flex flex-col justify-center md:justify-start w-full md:w-1/2 h-[365px] lg:h-[350px] bg-[#fafafa] p-4 md:p-6">
+          <div className="flex flex-col justify-center md:justify-start w-full md:w-1/2 bg-[#fafafa] h-[355px] md:h-[365px] lg:h-[350px] p-4 md:p-6">
             <h3 className="text-xl font-medium text-black leading-none mb-5">
               {item.title}
             </h3>

@@ -4,9 +4,12 @@ import { unlockSwiss } from '@/data/data';
 const UnlockSwissAdvantage = () => {
   return (
     <>
-      <div className="flex mb-[50px]">
-        <h2 className="text-5xl w-1/2">Unlock the Swiss Advantage</h2>
-        <p className="color-silver max-w-[540px] text-lg w-1/2">
+      <div className="grid grid-cols-1 lg:grid-cols-2 mb-8 md:mb-15 lg:mb-[50px]">
+        <h2 className="text-5xl leading-none mb-5 md:mb-6 lg:mb-0">
+          Unlock the Swiss Advantage
+        </h2>
+
+        <p className="color-silver max-w-[540px] text-lg">
           Switzerland&apos;s reputation for stability, innovation, and a
           business-friendly environment is renowned worldwide. By choosing{' '}
           <span className="text-[#f00]">Lawsupport</span> as your partner, you
@@ -30,6 +33,7 @@ const UnlockSwissAdvantage = () => {
                 alt={item.img}
               />
             </div>
+
             <div className="w-full md:w-1/2 h-[232px] md:h-[250px] lg:h-[209px] bg-[#fafafa] p-4 md:p-6">
               <Image
                 src={`/icons/unlockSwissAdvantage/${item.icon}.svg`}

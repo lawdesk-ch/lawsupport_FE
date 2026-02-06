@@ -11,27 +11,27 @@ import { SITE_URL, SITE_URL_IMAGES } from '@/const/constants';
 export default async function Home() {
   return (
     <>
-      <section className="container-mobile w-full mb-20">
+      <section className="container-mobile w-full mb-15 md:mb-20">
         <Hero />
       </section>
 
-      <section className="container-mobile w-full mb-[50px]">
+      <section className="container-mobile w-full mb-[30px] md:mb-[50px]">
         <SwissBusinessOverview />
       </section>
 
-      <section className="container-mobile w-full mb-40">
+      <section className="container-mobile w-full mb-[60px] md:mb-20 lg:mb-40">
         <ExpertiseAndServices />
       </section>
 
-      <section className="container-mobile w-full mb-40">
+      <section className="container-mobile w-full mb-[30px] md:mb-20 lg:mb-40">
         <OurApproach />
       </section>
 
-      <section className="container-mobile w-full mb-34">
+      <section className="container-mobile w-full mb-15 md:mb-20 lg:mb-34">
         <UnlockSwissAdvantage />
       </section>
 
-      <section className="container-mobile w-full mb-25">
+      <section className="container-mobile w-full mb-15 md:mb-20 lg:mb-25">
         <JoinOurSuccessStories />
       </section>
 
