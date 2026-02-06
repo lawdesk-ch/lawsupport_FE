@@ -144,3 +144,34 @@ export const ourApproach = [
     desc: `Lawsupport remains by your side even after successful setup, offering ongoing support and advice as needed.`,
   },
 ];
+
+export const unlockSwiss = [
+  {
+    img: 'image-1',
+    icon: 'icon-1',
+    title: 'Strategic Location',
+    description:
+      "Switzerland's central location in Europe provides your business with a gateway to both Western and Eastern markets. It's an ideal springboard for expanding your reach.",
+  },
+  {
+    img: 'image-2',
+    icon: 'icon-2',
+    title: 'Political Stability',
+    description:
+      "Switzerland's long-standing political stability offers a secure environment for business operations. This stability is a cornerstone of the country's economic success.",
+  },
+  {
+    img: 'image-3',
+    icon: 'icon-3',
+    title: 'Innovation Hub',
+    description:
+      'Switzerland is synonymous with innovation, boasting a thriving ecosystem of research institutions, technology parks, and startups. Collaborate with local innovators and stay at the forefront of your industry.',
+  },
+  {
+    img: 'image-4',
+    icon: 'icon-4',
+    title: 'Tax Benefits',
+    description:
+      "Switzerland's competitive tax rates and favorable tax treaties make it a prime destination for businesses looking to optimize their tax strategy. We'll help you navigate the tax landscape effectively.",
+  },
+];

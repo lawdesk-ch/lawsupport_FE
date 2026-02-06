@@ -24,9 +24,9 @@ function Hero() {
             quality={75}
             fill
             sizes="(max-width: 768px) 100vw, 
-                          (max-width: 1024px) 768px, 
-                          (max-width: 1440px) 1024px, 
-                          1440px"
+              (max-width: 1024px) 768px, 
+              (max-width: 1440px) 1024px, 
+              1440px"
             className="w-full h-full object-cover"
           />
         </div>

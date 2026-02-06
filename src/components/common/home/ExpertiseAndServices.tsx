@@ -99,24 +99,26 @@ const ExpertiseAndServices = () => {
       {expertiseAndServices.map((item, index) => (
         <li
           key={item.title}
-          className={`flex max-w-[700px] h-[350px] ${
-            index % 4 >= 2 ? 'flex-row-reverse' : ''
-          }`}
+          className={`flex flex-col md:flex-row w-full 
+            ${index % 2 === 1 ? 'md:flex-row-reverse lg:flex-row' : ''}
+            ${index % 4 >= 2 ? 'lg:flex-row-reverse' : ''}`}
         >
-          <Image
-            src={`/images/expertiseAndServices/${item.img}.jpg`}
-            className="w-[350px] h-[350px] object-cover"
-            loading="lazy"
-            width={350}
-            height={350}
-            alt={item.img}
-          />
-          <div className="w-[350px] h-[350px] bg-[#fafafa] p-6">
+          <div className="relative w-full md:w-1/2 h-[365px] lg:h-[350px]">
+            <Image
+              src={`/images/expertiseAndServices/${item.img}.jpg`}
+              className="object-cover"
+              sizes="(min-width: 1024px) 50vw, 100vw"
+              loading="lazy"
+              fill
+              alt={item.img}
+            />
+          </div>
+          <div className="flex flex-col justify-center md:justify-start w-full md:w-1/2 h-[365px] lg:h-[350px] bg-[#fafafa] p-4 md:p-6">
             <h3 className="text-xl font-medium text-black leading-none mb-5">
               {item.title}
             </h3>
 
-            <p className="text-lg color-silver leading-tight">
+            <p className="lg:text-lg color-silver leading-tight">
               {item.description}
             </p>
           </div>

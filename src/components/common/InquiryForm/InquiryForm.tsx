@@ -204,7 +204,6 @@ export default function InquiryForm({ open, onClose }: InquiryFormProps) {
         </h2>
 
         <p className="mb-5">
-          {' '}
           Send us a message and we&apos;ll get back to you.
         </p>
 

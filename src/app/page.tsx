@@ -2,6 +2,9 @@ import Hero from '@/components/common/home/Hero';
 import SwissBusinessOverview from '@/components/common/home/SwissBusinessOverview';
 import ExpertiseAndServices from '@/components/common/home/ExpertiseAndServices';
 import OurApproach from '@/components/common/home/OurApproach';
+import UnlockSwissAdvantage from '@/components/common/home/UnlockSwissAdvantage';
+import JoinOurSuccessStories from '@/components/common/home/JoinOurSuccessStories';
+import ContactUs from '@/components/common/home/ContactUs';
 
 import { SITE_URL, SITE_URL_IMAGES } from '@/const/constants';
 
@@ -22,6 +25,18 @@ export default async function Home() {
 
       <section className="container-mobile w-full mb-40">
         <OurApproach />
+      </section>
+
+      <section className="container-mobile w-full mb-34">
+        <UnlockSwissAdvantage />
+      </section>
+
+      <section className="container-mobile w-full mb-25">
+        <JoinOurSuccessStories />
+      </section>
+
+      <section className="container-mobile w-full">
+        <ContactUs />
       </section>
     </>
   );

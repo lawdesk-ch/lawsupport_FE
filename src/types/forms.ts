@@ -12,10 +12,11 @@ export interface InquiryFormState extends InquiryPayload {
   captchaToken: string;
 }
 
-export interface ConsultationPayload {
+export interface ContactPayload {
   name: string;
-  phone: string;
+  whatsapp: string;
   email: string;
+  message: string;
 }
 
 export interface AuthorPayload {

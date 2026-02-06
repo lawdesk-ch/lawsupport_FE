@@ -9,7 +9,7 @@ import InquiryForm from '@/components/common/InquiryForm';
 const OurApproach = () => {
   const [open, setOpen] = useState(false);
   return (
-    <div className="w-full ">
+    <>
       <div className="flex mb-[50px]">
         <h2 className="text-5xl w-1/2">Our approach</h2>
         <p className="color-silver max-w-[590px] text-lg w-1/2">
@@ -86,7 +86,7 @@ const OurApproach = () => {
       </div>
 
       <InquiryForm open={open} onClose={() => setOpen(false)} />
-    </div>
+    </>
   );
 };
 

@@ -9,8 +9,79 @@ import { getArticlesByCategory } from '@/lib/strapi';
 import { NewsProvider } from '@/context/NewsContext';
 import { SITE_URL, SITE_URL_IMAGES } from '@/const/constants';
 
+import type { Metadata } from 'next';
 import { Geologica } from 'next/font/google';
 import localFont from 'next/font/local';
+
+export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: 'Lawsupport — Corporate Services & Legal Support in Switzerland',
+    template: '%s | Lawsupport',
+  },
+  description:
+    'Lawsupport is a Swiss corporate law firm providing company formation, legal support, Swiss bank account setup, resident cards, accounting and business consulting in Switzerland.',
+  keywords: [
+    'Lawsupport',
+    'corporate services Switzerland',
+    'Swiss corporate law firm',
+    'company formation Switzerland',
+    'business legal support Switzerland',
+    'Swiss bank account',
+    'resident card Switzerland',
+    'accounting services Switzerland',
+    'company liquidation Switzerland',
+    'shelf company Switzerland',
+    'migration to Switzerland',
+  ],
+  authors: [{ name: 'Lawsupport' }],
+  alternates: {
+    canonical: SITE_URL,
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    siteName: 'Lawsupport',
+    title: 'Lawsupport — Corporate Services & Legal Support in Switzerland',
+    description:
+      'Swiss corporate services made easy. Company formation, Swiss bank accounts, resident cards, accounting and legal support for your business.',
+    url: SITE_URL,
+    images: [
+      {
+        url: SITE_URL_IMAGES,
+        width: 1200,
+        height: 630,
+        alt: 'Lawsupport — Swiss Corporate Legal Services',
+      },
+    ],
+  },
+
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Lawsupport — Corporate Services in Switzerland',
+    description:
+      'Company formation, Swiss bank accounts, resident cards, accounting and legal support for businesses in Switzerland.',
+    images: [SITE_URL_IMAGES],
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+      'max-video-preview': -1,
+    },
+  },
+
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
+  },
+};
 
 const guton = localFont({
   src: [
@@ -62,49 +133,3 @@ export default async function RootLayout({
     </html>
   );
 }
-
-export const metadata = {
-  title: 'Lawsupport — Corporate Services & Business Setup in Switzerland',
-  description:
-    'Lawsupport provides expert legal support and corporate services in Switzerland. From company formation, resident cards, Swiss bank accounts to accounting and company liquidation, we help entrepreneurs launch and grow their Swiss business efficiently.',
-  keywords: [
-    'Lawsupport',
-    'legal support Switzerland',
-    'corporate services Switzerland',
-    'company formation Switzerland',
-    'start a business in Switzerland',
-    'Swiss bank account',
-    'resident card Switzerland',
-    'accounting Switzerland',
-    'company liquidation Switzerland',
-    'shelf company Switzerland',
-    'migration to Switzerland',
-    'Swiss business consulting',
-    'corporate law firm Switzerland',
-    'business launch Switzerland',
-  ],
-
-  openGraph: {
-    type: 'website',
-    title: 'Lawsupport — Corporate Services & Business Setup in Switzerland',
-    description:
-      'Lawsupport provides expert legal support and corporate services in Switzerland. From company formation, resident cards, Swiss bank accounts to accounting and company liquidation, we help entrepreneurs launch and grow their Swiss business efficiently.',
-    url: SITE_URL,
-    images: [
-      {
-        url: SITE_URL,
-        width: 1200,
-        height: 630,
-        alt: 'Lawsupport — Legal and Corporate Services in Switzerland',
-      },
-    ],
-  },
-
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Lawsupport — Corporate Services & Business Setup in Switzerland',
-    description:
-      'Lawsupport provides expert legal support and corporate services in Switzerland. From company formation, resident cards, Swiss bank accounts to accounting and company liquidation, we help entrepreneurs launch and grow their Swiss business efficiently.',
-    images: [SITE_URL_IMAGES],
-  },
-};
